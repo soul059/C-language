@@ -5,12 +5,12 @@ int main()
 
     char a[50];
     scanf("%[^\n]",a);
-    int l = strlen(a)-1;
+    int l = strlen(a);
     int mat =0,i;
 
     for(i=0;i<l;i++,l--)
     {
-        if(a[i]!=a[l])
+        if(a[i]==a[l])
         {
             mat=0;
         }
@@ -19,11 +19,11 @@ int main()
 
     if(mat==0)
     {
-        printf("string is not palindrome\n");
+        printf("string is palindrome\n");
     }
     else
     {
-        printf("string is palindrome\n");
+        printf("string is not palindrome\n");
     }
 
     return 0;
