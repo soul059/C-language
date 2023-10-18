@@ -19,11 +19,11 @@ int main()
 
     if(mat==0)
     {
-        printf("string is palindrome\n");
+        printf("string is not palindrome\n");
     }
     else
     {
-        printf("string is not palindrome\n");
+        printf("string is palindrome\n");
     }
 
     return 0;
