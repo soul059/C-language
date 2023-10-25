@@ -16,6 +16,8 @@ void datoz(char a[],char b[],char c[])
             b[j]= a[i];
             j++;
         }
+        c[k]='\0';
+        b[j]='\0';
     }
     return;
 }
