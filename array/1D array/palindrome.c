@@ -2,17 +2,21 @@
 
 int palindrome(int a[],int n)
 {
+    int count;
     for(int i=0,j=n-1;i<j;i++,j--)
     {
         if(a[i]==a[j])
         {
-            return 1;
+            count=0;
         }
         else
         {
             return 0;
         }
     }
+    if(count==0)
+    return 1;
+
     return 0;
 }
 
