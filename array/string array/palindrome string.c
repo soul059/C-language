@@ -5,7 +5,7 @@ int main()
 
     char a[50];
     scanf("%[^\n]",a);
-    int l = strlen(a);
+    int l = strlen(a)-1;
     int mat =0,i;
 
     for(i=0;i<l;i++,l--)
