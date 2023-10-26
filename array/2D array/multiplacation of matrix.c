@@ -38,27 +38,27 @@ int main()
     else
     {
         //muiltiplaction
-    int res[m][q];
-    for(int i = 0;i<m;i++)
-    {
-        for(int j = 0;j<q;j++)
+        int res[m][q];
+        for(int i = 0;i<m;i++)
         {
-            res[i][j]=0;
-           for(int k=0;k<n;k++)
-           {
-            res[i][j]+= a[i][k]*b[k][j];
-           }
+            for(int j = 0;j<q;j++)
+            {
+                res[i][j]=0;
+                for(int k=0;k<n;k++)
+                {
+                    res[i][j]+= a[i][k]*b[k][j];
+                }
+            }
         }
-    }
 
-     for(int i = 0;i<n;i++)
-    {
-        for(int j = 0;j<m;j++)
+        for(int i = 0;i<n;i++)
         {
-            printf("%d ",res[i][j]);
+            for(int j = 0;j<m;j++)
+            {
+                printf("%d ",res[i][j]);
+            }
+            printf("\n");
         }
-        printf("\n");
-    }
 
     }
 
