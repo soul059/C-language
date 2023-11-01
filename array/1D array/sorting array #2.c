@@ -1,4 +1,22 @@
 #include <stdio.h>
+
+void sorting(int a[],int n)
+{
+    int i,j;
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            if (a[j]>a[j+1])
+            {
+                int tamp= a[j+1];
+                a[j+1] = a[j];
+                a[j]= tamp;
+            }
+        }
+    }
+    return;
+}
 int main()
 {
     int a[100];
@@ -18,19 +36,20 @@ int main()
     }
 
     //imp shorting #2
-    for(i=0;i<n;i++)
-    {
-        for(int j=0;j<n;j++)
-        {
-            if (a[j]>a[j+1])
-            {
-                int tamp= a[j+1];
-                a[j+1] = a[j];
-                a[j]= tamp;
-            }
-        }
-    }
+    // for(i=0;i<n;i++)
+    // {
+    //     for(int j=0;j<n;j++)
+    //     {
+    //         if (a[j]>a[j+1])
+    //         {
+    //             int tamp= a[j+1];
+    //             a[j+1] = a[j];
+    //             a[j]= tamp;
+    //         }
+    //     }
+    // }
 
+    sorting(a,n);
 
 
     printf("sorted array is: \n");

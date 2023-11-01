@@ -27,11 +27,9 @@ int main()
     {
         int sum = 0;
         for(j=0;j<m;j++)
-        {
+        
             sum += a[i][j];
-            
-           
-        }
+ 
         if(max<sum)
             {
                 max = sum;

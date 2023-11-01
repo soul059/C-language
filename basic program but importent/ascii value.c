@@ -6,7 +6,7 @@ int main(){
     
     printf("%d\n",'a');
 
-    printf("%d\n",48); // this is value of 0
+    printf("%c\n",48); // this is value of 0
 
     return 0;
 }

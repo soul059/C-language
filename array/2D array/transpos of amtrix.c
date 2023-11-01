@@ -32,12 +32,13 @@ int main()
 
     printf("\n");
 
-
+    // this is main for transpos
+    
     for (i = 0;i<m;i++) // m is coluns
     {
         for(j=0;j<n;j++) // n is rows
         {
-           tra[i][j] = a[j][i]; 
+           tra[i][j] = a[j][i];
         }
     }
 
