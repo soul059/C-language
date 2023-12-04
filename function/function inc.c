@@ -1,6 +1,6 @@
 /*
 --> function are used to divide a large c program into smaller pieces
---> A function can be called multiple times to provide reusability and modularity to the C program
+--> A function can be called multiple times to provide reusability and modularity to the C prigram
 --> Functions help in breaking down the code, making it more readable.
 --> also called produre or subroutine
 */

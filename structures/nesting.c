@@ -30,5 +30,24 @@ int main()
     arcus.l.spicalAttack = 99999;
     strcpy(arcus.spical,"cunvert any thing to rock");
 
+    
+    printf("Name: %s\n", arcus.l.normal.name);
+    printf("HP: %d\n", arcus.l.normal.hp);
+    printf("ATK: %d\n", arcus.l.normal.attack);
+    printf("DEF: %d\n", arcus.l.normal.defense);
+    printf("SPCL ATK: %d\n", arcus.l.spicalAttack);
+    printf("%s\n",arcus.spical);
+
+/*
+Output:
+Name: Arcus
+HP: 1234
+ATK: 9876
+DEF: 5432
+SPCL ATK: 99999
+cunvert any thing to rock
+*/
+
+
     return 0;
 }

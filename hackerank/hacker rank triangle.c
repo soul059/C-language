@@ -14,34 +14,32 @@ void sort_by_area(triangle* tr, int n) {
 	/**
 	* Sort an array a of the length n
 	*/
-    int p[n];
+    int p=0;
     int s[n];
-    int tamp;
+    int temp;
+    triangle tamp;
     for(int i = 0;i<n;i++)
     {
-        p[i]=(tr[i].a+tr[i].b+tr[i].c)/2;
-        s[i]=sqrt(p[i]*(p[i]-tr[i].a)*(p[i]-tr[i].b)*(p[i]-tr[i].c));
+        p=(tr[i].a+tr[i].b+tr[i].c)/2;
+        s[i]=sqrt(p * (p-tr[i].a) * (p-tr[i].b) * (p-tr[i].c));
     }
-    for(int i=0;i<n;i++)
+    for(int i=0;i<n-1;i++)
     {
-        for(int j=0;j<n-1;j++)
+        for(int j=0;j<n-1-i;j++)
         {
-            if(s[i]>s[j+1])
+            if(s[j]>s[j+1])
             {
-                tamp = tr[i].a;
-                tr[i].a=tr[j+1].a;
-                tr[j+1].a=tamp;
+                temp = s[j];
+                s[j] = s[j+1];
+                s[j+1] = temp;
                 
-                tamp = tr[i].b;
-                tr[i].b=tr[j+1].b;
-                tr[j+1].b=tamp;
+                tamp = tr[j];
+                tr[j]=tr[j+1];
+                tr[j+1]=tamp;
                 
-                tamp = tr[i].c;
-                tr[i].c=tr[j+1].c;
-                tr[j+1].c=tamp;
             }
         }
-    }   
+    }
 }
 
 int main()

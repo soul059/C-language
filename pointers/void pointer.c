@@ -28,9 +28,9 @@ int main()
 
     --> It is not possible to dereference void pointers.
 
-    --> pointer arithmetic is not allowed in C standards eith voide pointers.
+    --> pointer arithmetic is not allowed in C standards with voide pointers.
     
-    --> hence it is not recommended to use pointer arithetic eith void poinetrs.
+    --> hence it is not recommended to use pointer arithetic with void poinetrs.
     
     */
     ptr = &n;

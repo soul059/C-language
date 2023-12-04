@@ -13,7 +13,7 @@ int main()
             printf("\n");
             i+=1;
         }
-        if(i==l+1) a[i]='\0';
+        else
         printf("%c",a[i]);
     }
 

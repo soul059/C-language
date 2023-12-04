@@ -19,6 +19,7 @@ void numbers(int n)
 int main()
 {
     int n;
+    
     printf("enter the number : ");
     scanf("%d",&n);
 
